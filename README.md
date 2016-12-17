@@ -47,6 +47,7 @@
 
 		+ Cuối cùng là HEAD: chỉ đến cam kết cuối cùng mà bạn đã thực hiện.
 
+		![logo](https://github.com/truongthanhdat/MyDocumentations/blob/master/images/Workflow.png)
 		
 	4. **Add và commit:**
 	

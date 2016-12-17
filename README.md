@@ -88,7 +88,7 @@
 
 		+ Nhánh được sử dụng để phát triển các tính năng độc lập với các tính năng còn lại. Nhánh chủ mặc định khi tạo một repository có tên nhánh là master. Sử dụng các nhánh khác để phát triển và hợp nhất (merge) lại với nhau sau khi các nhanh đã được hoàn hiện.
 
-		[logo](!)
+		![logo](https://github.com/truongthanhdat/MyDocumentations/blob/master/images/branch.png)
 		
 		+ Để tạo ra một nhánh mới và chuyển sang nhánh này ta dùng lệnh:
 		

@@ -86,6 +86,86 @@
 
 	6. **Nhánh (Branching):**
 
-		+ 
+		+ Nhánh được sử dụng để phát triển các tính năng độc lập với các tính năng còn lại. Nhánh chủ mặc định khi tạo một repository có tên nhánh là master. Sử dụng các nhánh khác để phát triển và hợp nhất (merge) lại với nhau sau khi các nhanh đã được hoàn hiện.
+
+		[logo](!)
+		
+		+ Để tạo ra một nhánh mới và chuyển sang nhánh này ta dùng lệnh:
+		
+		```git
+		git checkout -b <branch>
+		```
+		
+		+ Để chuyển đổi về nhánh master:
+
+		```git
+		git checkout master
+		```
+		
+		+ Để xoá một nhánh (giả sử tên nhánh cần xoá là feature_x):
+
+		```git
+		git branch -d <branch>
+		```
+		
+		+ Một nhánh khi bạn tạo trên local là không có sẵn với những người dùng khác trừ khi bạn đẩy lên repository trên cloud.
+
+		```git
+		git push origin <branch>
+		```
+		
+	7. Cập nhật (Update) và hợp nhất (Merge):
+
+		+ Để cập nhật local repository của bạn với những commit mới nhất, bạn thực hiện lệnh:	```git pull ``` trên thực mục local của bạn để lấy (fetch) và cập nhật những thay đổi từ xa.
+
+		+ Để hợp nhất một nhánh với nhánh hiện thời của bạn ta thực hiện lệnh ``` git merge <branch> ```. Trong cả hai trường hợp kho của bạn tự động cập nhật những thay đổi. Nhưng điều không may xảy ra là kết quả cập nhật không phải lúc nào cũng thành công, mà thường sẽ xảy ra các xung đột. Bạn có trách nhiệm hợp nhất các xung đột đó bằng cách thay đổi bằng tay các file mà được hiển thị bời git. Sau khi thay đổi, bạn đánh dấu các file này xác nhập với:
+	
+		```git
+		git add <file>
+		```
+	
+		+ Trước khi xác nhập lại với nhau, bạn cần nhìn lại sự thay đổi của bạn thông qua lệnh:
+			
+		```git
+		git diff <source branch> <target branch>
+		```
+			
+	8. Tagging, Log, Thay đổi thư mục local:
+
+		+ Sẽ được cập nhật sau.
+	
+## Một số đề nghị cá nhân:
+
+
+1. **Hệ điều hành:**
+
+	+ Nên tập dần quen với việc sử dụng hệ điều hành mã nguồn mở vì nhiều lý do sau:
+		
+		+ Đa số các hệ thống quản lý server và các hệ thống chấm sử dụng Linux.
+
+		+ Cài đặt cập nhật các bộ dịch trên Linux thực hiện khá đơn giản và dễ dàng.
+
+		+ Cộng đồng mã nguồn mở khá lớn, thuật tiện cho quá trình chúng ta phát triển dự án.
+
+	+ Trình biên dịch:
+	
+		+ Cần phân biệt giữ Compile và Interprete.
+
+		+ Sử dụng các lệnh dịch thay vì sử dụng các IDE hoặc các Editor hỗ trợ sắn.
 
 	
+	+ Tập quen dần với việc sử dụng bash. Ai sử dụng Windows đã có thể sử dụng bash vì bây giờ MS là thành viên của Linux.
+
+	+ Microsoft cung cấp Azure khá là hay để có thể thử nghiệm web. Và có thể sử dụng Azure thông qua git.
+
+2. **Git:**
+
+	+ Khi ta tạo một repository, ta nên viết một README và trong README phải có phần hướng dẫn cài đặt và sử dụng. Cho dù repository của chúng ta là public hay private vẫn nên phải có, để những thành viên làm chung có thể dễ dàng sử dụng.
+	
+	+ Không nên forge push các file git.
+
+	+ Nên kiểm tra trạng thái của git thông qua lệnh ```git status```/
+
+	+ Không nên commit rỗng.
+
+	+ Nên tạo một file .gitinogre trong file chứa những extension mà file nào có extension này sẽ không thấy trong trạng thái kho git.

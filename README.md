@@ -169,3 +169,7 @@
 	+ Không nên commit rỗng.
 
 	+ Nên tạo một file .gitinogre trong file chứa những extension mà file nào có extension này sẽ không thấy trong trạng thái kho git.
+
+## Tham khảo:
+
++ [Git - The simple guide](http://rogerdudler.github.io/git-guide/)

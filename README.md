@@ -130,10 +130,43 @@
 		git diff <source branch> <target branch>
 		```
 			
-	8. Tagging, Log, Thay đổi thư mục local:
-
-		+ Sẽ được cập nhật sau.
+	8. **Tagging:**
 	
+		+ Tag được được nghị tạo ra như các tag cho các phiên bản phần mềm (có thể hiểu như version của phần mềm). Nó là một khái niệm được biết đến cũng như tồn tại trong khái niệm về SVN (Subversion).
+		
+		+ Bạn có thể tạo một một tag mới với tên 1.0.0 bằng việc thực hiện lệnh:
+		
+		```git
+		git tag 1.0.0 1b2e1d63ff
+		```
+		
+		+ 1b2e1d63ff là 10 ký tự đầu tiên của commit id mà bạn muốn đặt tên tag la 1.0.0. Bạn có thể tìm lại các commit id của mình thông qua lệnh ``` git log ```
+
+	
+	9. **Log:**
+
+		+ Trong trường hợp đơn giản nhất, ta hiểu log như là việc xem lại lịch sử repository của bạn. Ta dùng lệnh ``` git log ``` để xem lại lịch sử của repository.
+		
+		+ Bạn có thể thêm các thông số thuộc tính để xem những lịch sử bạn quan tâm: Ví dụ như:
+		
+			+ ``` git log --author=<author> ```: Chỉ xem lịch sử mà author đã thao tác với repository.
+
+			+ ``` git log --pretty=oneline ```: Để xem các lịch sử được nén gọn lại trên một dòng.
+			+ Để biết thêm nhiều nữa có thể dùng lệnh: ``` git log --help```
+
+	10. **Replace local changes:**
+	
+		+ Trong trường hợp bạn đã làm sai một file nào đó và bạn đã commit lên HEAD. Bạn có thay thế lại những thay đổi trên thư mục local của bạn bằng lệnh ``` git checkout -- <file name> ```
+		
+		+ Khi thực hiện thao tác trên sẽ thay thế những thay đổi trong cây làm việc của bạn với nội dụng cuối cùng trong HEAD. Những thay đổi được thêm vào index cũng như các tập tin mới sẽ được giữ lại.
+
+		+ Nếu bạn thay thế tất cả các thay đổi trên local của bạn, lấy lịch sử cuối cùng trên cloud và chỉ vào nhánh master tại local của bạn như sau:
+
+		```git
+		git fetch origin
+		git reset --hard origin/master
+		```
+		
 ## Một số đề nghị cá nhân:
 
 
@@ -173,3 +206,7 @@
 ## Tham khảo:
 
 + [Git - The simple guide](http://rogerdudler.github.io/git-guide/)
+
++ [Git community book](https://git-scm.com/book/en/v2)
+
++ [GitHub help](https://help.github.com)

@@ -166,42 +166,6 @@
 		git fetch origin
 		git reset --hard origin/master
 		```
-		
-## Một số đề nghị cá nhân:
-
-
-1. **Hệ điều hành:**
-
-	+ Nên tập dần quen với việc sử dụng hệ điều hành mã nguồn mở vì nhiều lý do sau:
-		
-		+ Đa số các hệ thống quản lý server và các hệ thống chấm sử dụng Linux.
-
-		+ Cài đặt cập nhật các bộ dịch trên Linux thực hiện khá đơn giản và dễ dàng.
-
-		+ Cộng đồng mã nguồn mở khá lớn, thuật tiện cho quá trình chúng ta phát triển dự án.
-
-	+ Trình biên dịch:
-	
-		+ Cần phân biệt giữ Compile và Interprete.
-
-		+ Sử dụng các lệnh dịch thay vì sử dụng các IDE hoặc các Editor hỗ trợ sắn.
-
-	
-	+ Tập quen dần với việc sử dụng bash. Ai sử dụng Windows đã có thể sử dụng bash vì bây giờ MS là thành viên của Linux.
-
-	+ Microsoft cung cấp Azure khá là hay để có thể thử nghiệm web. Và có thể sử dụng Azure thông qua git.
-
-2. **Git:**
-
-	+ Khi ta tạo một repository, ta nên viết một README và trong README phải có phần hướng dẫn cài đặt và sử dụng. Cho dù repository của chúng ta là public hay private vẫn nên phải có, để những thành viên làm chung có thể dễ dàng sử dụng.
-	
-	+ Không nên forge push các file git.
-
-	+ Nên kiểm tra trạng thái của git thông qua lệnh ```git status```/
-
-	+ Không nên commit rỗng.
-
-	+ Nên tạo một file .gitinogre trong file chứa những extension mà file nào có extension này sẽ không thấy trong trạng thái kho git.
 
 ## Tham khảo:
 
